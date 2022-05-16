@@ -1,0 +1,217 @@
+Todays we discuss about
+
+1) UNIX
+
+2) GIT 
+
+3) Agile
+
+________________________________________________________________________________________
+
+1) What is Operating System 
+
+   An operating system is a software package that which acts as an interface
+between user and application programs. 
+
+There are 2 types of operating systems known as
+
+1) Single User
+	Single Tasking  : DOS
+
+	Multi Tasking  : Windows 
+
+2) Multip User 
+
+   Unix 
+
+________________________________________________________________________________________
+
+Unix Introduction
+
+Unix Architecture
+
+Unix Commands
+
+Pipes and Filters
+
+vi editor 
+
+Unix Architecture : 
+____________________
+
+     Has a layered architecture with 2 major separatable parts
+
+	-> Kernal
+
+		Kernal is heart w.r.t. UNIX OS
+
+		It provides various services, processes for the given users
+
+		When the booting process is going to start, kernal loaded into the memory and initiates
+	various other processes for the users to effectively make uses of OS 
+
+
+_______________________________________________________________________________________________
+
+unix command
+
+1) pwd -> Present Working Directory
+
+2) cd -> returns to the default directory
+
+3) mkdir directory_name -> Used to make a new directory 
+
+    mkdir segue 
+
+4) cd directory_name -> used to redirect to the particular directory
+
+5) ls : Used to display list of files
+
+6) ls -l : Used to display long listing of files 
+
+7) touch fileName : Creates an empty file
+
+8) cat > file_name : Used to create a new file {to save file press ctrl+d} 
+
+9) cat file_name : used to display the content of the file.
+
+10) mv source target : used to rename the old file with new file name
+
+11) cp : used to copy one or more files 
+
+12) rm file_name : Used to remote the contents of the file. 
+
+
+  cp source target
+
+
+Filters : 
+
+There are various pipes available in unix as 
+
+1) wc : Word Count
+
+   wc file_name 
+   
+   wc -c file_name
+
+   wc -w file_name
+
+   wc -l file_name 
+
+2) head : Displays no.of lines at top
+
+  head -4 fileName
+
+displays first 4 lines of the given file
+
+3) tail : Display no.of lines at bottom
+
+    tail -4 fileName
+
+4) grep (Globally Search for Regular Expression and PrintOut) 
+
+Used to search for given word
+   
+  grep "Prasanna" student.txt
+
+5) grep -c : Counts no.of times it exists
+
+	grep -c "Prasanna" student.txt
+
+6) grep -n : Displays the lines with line number also
+
+       grep -n "Prasanna" student.txt
+
+7) grep -v : Displays unmatched lines
+
+       grep -v "Prasanna" student.txt
+
+8) paste file1 file : Merges the lines and dispalys content in the console
+
+9) sort file_name : used to sort the given file_names
+
+   sort file_name 
+
+   sort -r file_name
+
+10) HOw to redirect output to another page
+
+< for input
+
+> for output
+
+11) tr filter : Used to transalte and store in another file.
+
+tr "[a-z]" "[A-Z]" < stud.txt > res3.txt
+
+vi editor : 
+____________
+to insert press esc+i
+
+to save file esc
+
+:wq
+
+____________________________________________________________________________________________
+
+git 
+____
+
+Version Control Systems 
+
+	It is a system, that records changes to a file or set of files. 
+
+        Centralized Version Control System
+
+	Distributed Version Control System
+
+Git Life Cycle
+
+Create Git Account
+
+Git is a free and open-source distributed version control system designed to handle everything from small to large projects with speed and efficiency. 
+
+Every git working directory conains a full-fledged repository with complegte history 
+
+Git conatains main stages 
+
+1) Working Directory : Which every default repository you are working known as Working Directory. 
+
+2) Staging Area : It is a simple file, generately present in your git direcotry, that stores information about the next commit. 
+
+3) Git Directory : Stores the metadata and object database for project (while cloning)
+
+______________________________________________________________________________________
+
+commands in git 
+__________________
+
+
+to clone existing repository, then 
+
+git clone https://github.com/PrasannaSegueTr/SegueTraining
+
+to add to the staging area
+
+git add .
+
+to add to the local repository 
+
+git commit -m "message"
+
+to store in remote repository
+
+git push origin branch_name
+
+
+
+Create Git Repository
+
+How to Push and Pull the data from git 
+
+
+
+
+
+
