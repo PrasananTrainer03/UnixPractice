@@ -146,6 +146,51 @@ Once you create an account and create a repository, then you need to clone the r
 
 git clone url
 
+Git Basic Work Flow Life Cycle : 
+__________________________________
+
+
+Working Directory
+
+	Which every default repository, you are cloned comes w.r.t. Working Directory. 
+
+UnixPractice is the repository, where you need to get all updated files
+
+Staging Area
+
+	This area contains all modified or new files or new updated content in this. 
+
+You can add the files to the staging area by 
+
+git add file1
+
+git add file2 
+
+
+Local Repository : Contains list of files which are committed to push. 
+
+git commit -m "message"
+
+message is mandetory that which states that what is the push purpose, you can see them from git log later 
+
+Remote Respository : Once you push the files to the remote repository, then authorized users can access those information. 
+
+git push origin branch_name
+
+git log : used to see the log information
+
+git pull : used to pull data. 
+
+git status : Displays the current status of your git life cycle
+
+git diff : displays different between committed code (vs) uncommited code. 
+
+
+
+
+
+
+
 
 
 
