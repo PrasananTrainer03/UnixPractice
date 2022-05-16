@@ -185,6 +185,24 @@ git status : Displays the current status of your git life cycle
 
 git diff : displays different between committed code (vs) uncommited code. 
 
+How to Make a new branch : 
+____________________________
+
+git branch branch_name
+
+git checkout branch_name
+
+To Refresh branches
+
+git remote update
+
+To see list of branches
+
+git branch -r 
+
+To Remove branch
+
+git branch -D branch_name
 
 
 
