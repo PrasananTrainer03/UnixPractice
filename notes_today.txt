@@ -1,0 +1,165 @@
+1) pwd (Print Working Directory) 
+
+2) cd (Changes to the default directory)
+
+3) mkdir directory_name
+
+4) To change to particular directory
+
+cd directory_name
+
+5) To see the list of files
+
+ls
+
+6) ls -l (Used for long listing of files)
+
+7) touch file_name (Used to create an empty file) 
+
+8) To see the contents of the file 
+
+cat file_name
+
+9) To create a file, we need to use
+
+cat > file_name 
+
+after typing the content, if you want to save the content
+
+<ctrl+d>
+
+10) mv command 
+
+used to rename the given file 
+
+   mv old_file new_file
+
+11) cp command 
+
+used to copy the file from one location to another location
+
+cp old_file new_file
+
+12) rm file_name
+
+used to remove the file 
+
+13) rmdir dir_name
+
+used to remove the directory 
+
+14) wc filter :
+
+	Used to display no.of words/lines/chars of the given file. 
+
+wc -c file_name : No.of Characters
+
+wc -w file_name  : No.of Words
+
+wc -l file_name  : No.of Lines
+
+
+15) grep (Globally Search for Regular Expression and PrintOut) 
+
+grep "Happy" training.txt
+
+grep -c "Happy" training.txt
+
+16) head : displays no.of lines at top 
+
+head -5 file_name
+
+17) tail : Displays no.of lines at bottom
+
+tail -5 file_name
+
+18) | pipe operator used for redirecting 
+
+19) sort : Used to sort the given data 
+
+sort file_name
+
+To redirect the output to another file, we need to use >, 
+
+To give any file as input, then we need the help of <,
+
+sort < file_name > target_file
+
+sort < students.txt > res2.txt
+
+
+sort -r < students.txt > res2.txt
+
+sort -r : Used to sort in reverse order 
+
+20) tr filter : Used to translate the data. 
+
+tr "[a-z]" "[A-Z]" < students.txt > res3.txt
+
+
+Git Session : 
+______________
+
+  -> What is Version Control System
+
+  -> Local Git Areas
+
+  -> What is GIT
+
+  -> Git Life Cycle
+
+  -> Create and Clone Git Repository
+
+  -> Git Commands
+
+Version Control System : 
+_________________________
+
+Assume, you are working in a project, at first you are downloading the master copy of the project into your
+local system(s), after that you keep on implemeting, then there are various versions of copies of projects are available known as version control system, ensures in that versions which is correct one we need to choose and upload as a master document at end of day. 
+
+These all comes under version control system, as it is a system that which records changes to a file or set of files. 
+
+Why Version COntrol : 
+______________________
+
+It gives nice support for different versions of same project. 
+
+It simplifies concurrent work, merging changes
+
+Git is a free open source distributed version control system designed to handle everythign from small to large projects with speed and efficiency. 
+
+
+Goals of Git:
+______________
+
+    -> Speed
+
+    -> Support for non-linear developement
+
+    -. fully Distributed
+
+    -> Able to handled large projects efficiently. 
+
+
+Once you create an account and create a repository, then you need to clone the repository
+
+git clone url
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
