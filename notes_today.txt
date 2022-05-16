@@ -204,6 +204,12 @@ To Remove branch
 
 git branch -D branch_name
 
+To create and move to branch
+
+git checkout -b branch_name
+
+git checkout -b manoj
+
 
 
 
