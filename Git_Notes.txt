@@ -1,0 +1,41 @@
+Git is basically worked as central repository, for version control system. 
+
+What is meant by version control system, means 
+
+everyday while we are working on projects, we find multiple copies of the projects
+from various project members, then we need to categorize the the versions of the project, and final project to be merged with main project.  This can be done by using git. 
+
+There are various stages/areas of git as 
+
+1) Working Directory
+
+	whichever current directory or repository you are facing known as working directory.
+
+2) Staging area
+
+	It is available in git repository, that contains list of files to be merged 
+    and need to be avaialble in git. 
+
+3) Local repository : Contains the files, which are availble in local directory of 
+	git and ready for remote.
+
+4) Remote Repository : this directory contains all the updated code available for 
+	respective project members. 
+
+
+How to add the files to staging area 
+
+git add .
+
+How to add files to local repository 
+
+git commit -m "message"
+
+How to Add files to remote repository 
+
+git push origin main
+
+
+git status : Want to see the current stage of git. 
+
+git diff : Displays the diff. between committed vs uncommited code
