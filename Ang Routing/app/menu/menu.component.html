@@ -1,0 +1,31 @@
+<p>menu works!</p>
+<!-- <a [routerLink]="['first']">First</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['second']">Second</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['third']">Third</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['twoway']">Two-Way</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['condition']">Condition</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['calculation']">Calculation</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['caseEx']">Case Example</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['employ']">Employ</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['employDropDown']">Employ DropDown</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+
+<a [routerLink]="['/menu',{outlets: {'segue': ['first']}}]"> First</a> 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <a [routerLink]="['/menu',{outlets: {'segue': ['second']}}]">Second</a> 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <a [routerLink]="['/menu',{outlets: {'segue': ['third']}}]">Third</a> 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <a [routerLink]="['/menu',{outlets: {'segue': ['twoway']}}]">TwoWay</a> 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <a [routerLink]="['/menu',{outlets: {'segue': ['condition']}}]">Condition</a> 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <a [routerLink]="['/menu',{outlets: {'segue': ['calculation']}}]">Calculation</a> 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <a [routerLink]="['/menu',{outlets: {'segue': ['caseEx']}}]">Case Example</a> 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <a [routerLink]="['/menu',{outlets: {'segue': ['employTable']}}]">Employ Table</a> 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <a [routerLink]="['/menu',{outlets: {'segue': ['employDropDown']}}]">Employ DropDown</a> 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<hr/>
+ <router-outlet name="segue"></router-outlet>

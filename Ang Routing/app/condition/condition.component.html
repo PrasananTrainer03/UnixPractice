@@ -1,0 +1,16 @@
+<p>condition works!</p>
+Status : 
+<input type="checkbox" name="status" [(ngModel)]="status" /> 
+<br/><br/>
+
+Status is : {{status}}
+<div *ngIf="status==true">
+    <p>
+        Student is Present...
+    </p>
+</div>
+<div *ngIf="status==false">
+    <p>
+        Student is Absent...
+    </p>
+</div>

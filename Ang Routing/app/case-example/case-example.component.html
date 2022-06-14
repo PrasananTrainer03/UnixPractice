@@ -1,0 +1,12 @@
+<p>case-example works!</p>
+Choice : 
+<input type="number" name="choice" [(ngModel)]="choice" />
+<br/><br/> 
+<div [ngSwitch]="choice">
+    <p *ngSwitchCase=1>HI I am Trinath Babu</p>
+    <p *ngSwitchCase=2>HI I am Mahathi</p>
+    <p *ngSwitchCase=3>HI I am Jyotshna</p>
+    <p *ngSwitchCase=4>HI I am Madhavi</p>
+    <p *ngSwitchCase=5>HI I am Divya Sai</p>
+    <p *ngSwitchDefault>Invalid Choice</p>
+</div>
