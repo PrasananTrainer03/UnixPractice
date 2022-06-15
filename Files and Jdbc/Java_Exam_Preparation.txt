@@ -1,0 +1,200 @@
+1) Which access modifier allows you to access members within current package and other package derived classes
+
+protected
+
+2) What are the below statements are true
+
+overloaded methods differ in no.of arguments (T)
+
+overloaded methods differ in type of arguments (T)
+
+overloaded methods differ in access modifier (F)
+
+overloaded methods differ in return type (F)
+
+3) What is the output for below program
+
+class First {
+   public static void main(String[] args) {
+	int x;
+	System.out.println(x);
+  }
+}
+
+-- Compile Time error as use of unassigned variable
+
+class First {
+   int x;
+   public static void main(String[] args) {
+       System.out.println(new First().x);
+   }
+}
+
+-- Prints value 0 as instance variables will have 0 for integer
+
+4)
+
+class First {
+   static {
+     System.out.println("Static First...");
+   }
+}
+
+class Second extends First {
+   static {
+     System.out.println("Static Second...");
+   }
+   public static void main(String[] args) {
+   }
+}
+
+class Demo {
+  static {
+    System.out.println("Demo");
+  }
+}
+
+What is the output for the above code 
+
+static first
+static second 
+
+_____________________________________________________________________________________
+
+What is the default pacakge in java 
+
+java.lang
+
+What is the top level class in java 
+
+Object 
+
+Which method of the Object class have representation of String 
+
+toString()
+
+What is the output for below code
+
+class First {
+   public static void main(String[] args) {
+      int ch='A';
+      System.out.println(ch);
+   }
+}
+
+65
+_______________________________________________________________________________
+
+What is the output for below code
+
+class First {
+   public static void main(String[] args) {
+      System.out.println("5"+3+8);  538
+      System.out.println("5"+(3+8)); 511
+      System.out.println("5+3"+8); 5+38
+   }
+}
+
+_________________________________________________________________________________
+
+clas First {
+    public static void main(String[] args) {
+        if (null==null) {
+           System.out.println("Hi");
+        } else {
+	   System.out.println("Bye");
+        }  
+    }
+}
+
+Hi
+
+_________________________________________________________________________________
+
+class Test {
+    public void show(Object ob) {
+       if (ob=="ABC") {
+           System.out.println("Correct");
+       } else {
+           System.out.println("Wrong...");
+       }
+    }
+    public static void main(String[] args) {
+        Test obj = new Test();
+        obj.show("ABC");
+    }
+}
+
+Correct 
+________________________________________________________________________________
+
+What is the return type of constructor 
+
+No Return Type
+
+_____________________________________________________________________________
+
+class First {
+   First() {} 
+}
+
+what is First() here 
+
+Constructor
+
+_____________________________________________________________________________________
+
+class Demo {
+    public static void main(String[] args) 
+       String month="Feb";
+       switch(feb) {
+             case "Feb" :
+	            System.out.println("Hi");
+             case "March" :
+	            System.out.println("Hello");
+             case "April" :
+	            System.out.println("Bye");
+             case "May" :
+	            System.out.println("Test");
+  	     default : 
+		   System.out.println("Invalid Choice...");
+       }
+   }
+}
+
+_____________________________________________________________________________________________
+
+What is true for final classes
+
+final classes can be inherited
+final classes cannot be inherited
+final classes contains constructor
+final classes contains static {} 
+
+___________________________________________________________________________________
+
+class First {
+   public final void show() {
+      System.out.println("Hi");
+   }
+}
+
+class Second extends First {
+    public void show() {
+       System.out.println("Hello");
+    }
+    public static void main(String[] args) {
+        new Second().show();
+    }
+}
+
+Final method cannot be inherited, we cannot reimplement in derived class. 
+compile time error
+
+______________________________________________________________________________________________
+
+
+
+
+
+
