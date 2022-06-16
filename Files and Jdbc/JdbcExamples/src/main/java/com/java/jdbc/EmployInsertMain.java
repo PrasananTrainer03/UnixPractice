@@ -10,26 +10,27 @@ public class EmployInsertMain {
 
 	public static void main(String[] args) {
 		int empno,basic;
-		String name,dept,desig,gender;
+		String name,gender,dept,desig;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter Employ Number    ");
+		System.out.println("Enter Employ Number   ");
 		empno=sc.nextInt();
 		System.out.println("Enter Name   ");
 		name=sc.next();
 		System.out.println("Enter Gender   ");
-		gender = sc.next().toUpperCase();
+		gender=sc.next();
 		System.out.println("Enter Department   ");
 		dept=sc.next();
 		System.out.println("Enter Designation   ");
 		desig=sc.next();
-		System.out.println("Enter Basic    ");
+		System.out.println("Enter Basic   ");
 		basic=sc.nextInt();
 		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/tb15practice",
-					"root","root");
-			String cmd = "Insert into Employ(empno,name,gender,dept,desig,basic) values(?,?,?,?,?,?)";
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/tb15practice", 
+					"root", "root");
+			String cmd = "Insert into Employ(empno,name,gender,dept,desig,basic)  "
+					+ " values(?,?,?,?,?,?)";
 			PreparedStatement pst = con.prepareStatement(cmd);
 			pst.setInt(1, empno);
 			pst.setString(2, name);
@@ -40,6 +41,7 @@ public class EmployInsertMain {
 			pst.executeUpdate();
 			System.out.println("*** Record Inserted ***");
 		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
