@@ -1,0 +1,33 @@
+<p>login-reactive works!</p>
+<form [formGroup]="loginForm" (ngSubmit)="onFormSubmit()">
+    <table border="3" align="center">
+        <tr>
+            <th>User Name</th>
+            <td> 
+                <input formControlName="userName" />
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Password 
+            </th>
+            <td>
+                <input formControlName="passCode" />
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">
+                <input type="submit" value="Login" />
+            </th>
+        </tr>
+        <tr>
+            <th colspan="2">
+                <div *ngIf="isFormSubmitted==false || loginForm.invalid">
+                    <p style="color: red;">
+                        Please Enter UserName and Password
+                    </p>
+                </div>
+            </th>
+        </tr>
+    </table>
+</form>

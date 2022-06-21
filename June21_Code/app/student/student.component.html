@@ -1,0 +1,50 @@
+<p>student works!</p>
+<form #studentForm="ngForm" (ngSubmit)="submit(studentForm)">
+    <table border="3" align="center">
+        <tr>
+            <td>Student No</td>
+            <td>
+              <input type="number" name="sno" [(ngModel)]="student.sno" 
+                required #sno="ngModel">
+            </td>
+            <div *ngIf="sno.invalid && studentForm.submitted && isValidForm==false"> 
+                <h6 style="color: red">Please Enter Student No...</h6>
+               </div>
+        </tr>
+        <tr>
+            <td>Student Name</td>
+            <td>
+              <input type="text" name="name" [(ngModel)]="student.name" 
+                required #name="ngModel">
+            </td>
+            <div *ngIf="name.invalid && studentForm.submitted && isValidForm==false"> 
+                <h6 style="color: red">Please Enter Student Name...</h6>
+               </div>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td>
+              <input type="text" name="city" [(ngModel)]="student.city" 
+                required #city="ngModel">
+            </td>
+            <div *ngIf="city.invalid && studentForm.submitted && isValidForm==false"> 
+                <h6 style="color: red">Please Enter Student City...</h6>
+               </div>
+        </tr>
+        <tr>
+            <td>Cgp</td>
+            <td>
+              <input type="number" name="cgp" [(ngModel)]="student.cgp" 
+                required #cgp="ngModel">
+            </td>
+            <div *ngIf="cgp.invalid && studentForm.submitted && isValidForm==false"> 
+                <h6 style="color: red">Please Enter Student Cgp...</h6>
+               </div>
+        </tr>
+        <tr>
+            <th colspan="2">
+                <input type="submit" value="Show" />
+            </th>
+        </tr>
+    </table>
+</form>

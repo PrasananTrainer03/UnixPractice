@@ -1,0 +1,72 @@
+<p>employ works!</p>
+
+<form #employForm="ngForm" (ngSubmit)="submit(employForm)">
+    <table border="3">
+        <tr>
+            <td>Employ No</td>
+            <td>
+              <input type="number" name="empno" [(ngModel)]="employ.empno" required #empno="ngModel">
+            </td>
+            <div *ngIf="empno.invalid && employForm.submitted && !isValidForm"> 
+                <h6 style="color: red">Please Enter Employ No...</h6>
+               </div>
+        </tr>
+        <tr>
+            <td>Employ Name</td>
+            <td>
+              <input type="text" name="name" [(ngModel)]="employ.name" 
+                required #name="ngModel">
+            </td>
+            <div *ngIf="name.invalid && employForm.submitted && !isValidForm"> 
+                <h6 style="color: red">Please Enter Employ Name...</h6>
+               </div>
+        </tr>
+        <tr>
+            <td>Department</td>
+            <td>
+              <input type="text" name="dept" [(ngModel)]="employ.dept" 
+                    required #dept="ngModel">
+            </td>
+            <div *ngIf="dept.invalid && employForm.submitted && !isValidForm"> 
+                <h6 style="color: red">Please Enter Department Name...</h6>
+               </div>
+        </tr>
+        <tr>
+            <td>Employ Designation</td>
+            <td>
+              <input type="text" name="desig" [(ngModel)]="employ.desig" required #desig="ngModel">
+            </td>
+            <div *ngIf="desig.invalid && employForm.submitted && !isValidForm"> 
+                <h6 style="color: red">Please Enter Designation...</h6>
+               </div>
+        </tr>
+        <tr>
+            <td>Basic</td>
+            <td>
+              <input type="number" name="basic" 
+                    [(ngModel)]="employ.basic" required #basic="ngModel">
+            </td>
+            <div *ngIf="basic.invalid && employForm.submitted && !isValidForm"> 
+                <h6 style="color: red">Please Enter Employ Basic...</h6>
+               </div>
+        </tr>
+
+        <tr>
+            <th colspan="2">
+                <input type="submit" value="Add Employ" />
+            </th>
+        </tr>
+        <tr>
+            <th colspan="2">
+                <pre>Pristine? {{ empno.pristine }}</pre>
+                <pre>Touched? {{ empno.touched }}</pre>
+                <pre>Untouched? {{ empno.untouched }}</pre>
+            </th>
+        </tr>
+
+    </table>
+</form>
+<br/><br/>
+<p *ngIf="isValidForm==true">
+    <b>Form Submitted Successfully</b>
+</p>

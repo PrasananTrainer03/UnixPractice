@@ -1,0 +1,62 @@
+<p>student-reactive works!</p>
+<form [formGroup]="studentForm" (ngSubmit)="onFormSubmit()">
+    <table>
+        <tr> 
+          <td>Student No:</td>
+          <td> 
+              <input formControlName="sno">
+                <div *ngIf="studentForm.get('sno').invalid &&
+                   isValidFormSubmitted != null && 
+                   !isValidFormSubmitted" [ngClass] = "'error'">
+                   <p style="color: red;">
+                      Student No required.
+                   </p>  
+              </div>
+          </td>
+        </tr>
+        <tr> 
+          <td>Student Name:</td>
+          <td> 
+              <input formControlName="name">
+                <div *ngIf="studentForm.get('name').invalid &&
+                   isValidFormSubmitted != null && 
+                   !isValidFormSubmitted" [ngClass] = "'error'">
+                   <p style="color: red;">
+                      Student Name required.
+                   </p>  
+              </div>
+          </td>
+        </tr>
+        <tr> 
+          <td>City</td>
+          <td> 
+              <input formControlName="city">
+                <div *ngIf="studentForm.get('city').invalid &&
+                   isValidFormSubmitted != null && 
+                   !isValidFormSubmitted" [ngClass] = "'error'">
+                   <p style="color: red;">
+                      City required.
+                   </p>  
+              </div>
+          </td>
+        </tr>
+        <tr> 
+          <td>Cgp</td>
+          <td> 
+              <input formControlName="cgp">
+                <div *ngIf="studentForm.get('cgp').invalid &&
+                   isValidFormSubmitted != null && 
+                   !isValidFormSubmitted" [ngClass] = "'error'">
+                   <p style="color: red;">
+                      Cgp required.
+                   </p>  
+              </div>
+          </td>
+        </tr>
+    
+        <tr> 	  
+            <td colspan="2">
+               <button>Submit</button>
+          </tr>	   
+        </table>
+</form>
